@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+code {
+    color: black;
+  }
+  
+  body {
+    font-family: inherit;
+    color: #222;
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    margin-left: 0px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    white-space: pre;
+    width: inherit;
+    overflow-x: scroll;
+  }
+  
+  a {
+    @apply text-blue-600;
+  }
+  
+  a:hover {
+    @apply text-blue-400;
+  }
+  
+  article {
+      @apply mb-2;
+  }
+  
+  article header h1, h2, h3 {
+    color: #2b2b2b;
+    font-weight: bold;
+    margin-top: 2px;
+  }
+  
+  article header h1 {
+    @apply text-2xl;
+  }
+  
+  article header h2 {
+    @apply text-2xl;
+  }
+  
+  article header {
+    color: #2b2b2b;
+    @apply my-2;
+  }
+  
+  article header p {
+    @apply px-0;
+    @apply pt-0;
+    @apply pb-1;
+    margin: 0;
+    line-height: 1.25;
+  }
+  
+  article header a {
+    color: #111;
+  }
+  
+  article header p {
+    color: #777;
+  }
+  
+  article header .tags {
+    font-size: 12px;
+  }
+  
+  article > h2, h3 {
+    @apply mb-4;
+  }
+  
+  article h1 {
+    @apply text-2xl;
+  }
+  
+  article h2 {
+    @apply text-xl;
+  }
+  
+  article h3 {
+    @apply text-lg;
+  }
+  
+  article > hr {
+      @apply pt-4;
+  }
+  
+  ul {
+      @apply list-disc list-outside;
+      padding-left: 40px;
+      @apply mb-4;
+  }
+  
+  ol {
+      @apply list-decimal list-outside;
+      padding-left: 40px;
+      @apply mb-4;
+  }
+  
+  .less-important {
+      @apply text-gray-600;
+  }
+  
+  .tags a {
+      @apply text-gray-600;
+      @apply bg-gray-100;
+      @apply rounded-sm;
+      @apply p-1;
+      text-transform: lowercase;
+  }
+  
+  .tags a:hover {
+      @apply text-gray-500;
+  }
+  
+  .pagination {
+      @apply p-2;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .pagination > li {
+      display: inline;  
+      @apply p-1;  
+  }
+
+  .admonition {
+    @apply rounded-md my-4 border-l-4 shadow-md border-blue-500;
+
+  }
+
+  aside.admonition p.admonition-title {
+    @apply m-0 text-lg font-medium py-1 px-2 bg-blue-50;
+  }
+
+  aside.admonition p {
+    @apply px-4 py-1 bg-gray-50;
+  }
