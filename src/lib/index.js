@@ -7,8 +7,11 @@ function mystjs(options) {
 	return {
 		markup: async ({ content, filename }) => {
 			if (!extensions.includes(filename.split('.').pop())) return;
+			let renderedContent = myst.render(content);
+			// escape any `{` characters for svelte
+			renderedContent = renderedContent.replace(/({|})/g, '{"$1"}');
 			return {
-				code: myst.render(content),
+				code: renderedContent,
 				data: {},
 				map: ''
 			};

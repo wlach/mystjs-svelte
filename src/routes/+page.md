@@ -15,7 +15,7 @@ The original looks like this:
 
 This is a very basic demonstration of MyST-in-mdsvex.
 
-```
+```{note}
 Here is a note!
 ```
 
